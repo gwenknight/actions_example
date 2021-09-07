@@ -84,11 +84,11 @@ Well spotted! That's because I'm running the jobs in parallel, which means that 
 **NOTE:** even with this, sometimes you can be really unlucky and have two parallel jobs finishing at the same time... in that case, one will fail to push the changes. You will be able to spot this error in the logs.
 
 
-## Can I run jobs FOREVER???
+### Can I run jobs FOREVER???
 No, workflow runs are limited to 72h in total, and each job in a workflow can only run for 6h. Bear this in mind when designing your analysis - if the script takes longer than 6h to run, the job will end without saving anything! However, there are no limis on the number of actions you can run, except if...
 
 
-## ... I want to run GitHub actions in a private repository!!
+### ... I want to run GitHub actions in a private repository!!
 Private repositories means that your code is hidden from the public, which can sometimes matter depending on the sensitivity of your work. Unfortunately, GitHub actions usage is limited with private repositories (2,000 minutes per month for Free accounts, 3,000 for Pro - these limits are tied to your account, not to single repositories).
 
 However, if you run jobs on MacOS, a multiplier of 10 will apply! This means that for every minute of MacOS job running, 10 minutes will be deduced from your monthly allowance. If you go over your monthly allowance, you will have to pay to keep using GitHub actions in a private repository.
