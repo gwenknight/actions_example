@@ -13,7 +13,7 @@ on:
 # Important: ubuntu-latest is not set up properly for R, so use macOS
 jobs:
   script-run1:
-    runs-on: ubuntu-latest # Runs the job on Linux. Other option: macos-latest (see README for pros/cons)
+    runs-on: macos-latest # Runs the job on MacOS. Other option: ubuntu-latest (see README for pros/cons)
     steps:
       # Manually installing Homebrew to overcome some version issues
       - name: Set up Homebrew
@@ -57,7 +57,7 @@ jobs:
 
 # A 2nd job, which will run in parallel of the 1st job
   script-run2:
-    runs-on: ubuntu-latest # Runs the job on Linux. Other option: macos-latest (see README for pros/cons)
+    runs-on: macos-latest # Runs the job on MacOS. Other option: ubuntu-latest (see README for pros/cons)
     steps:
       # Manually installing Homebrew to overcome some version issues
       - name: Set up Homebrew
