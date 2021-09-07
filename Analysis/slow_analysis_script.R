@@ -7,7 +7,7 @@ library(here)
 library(animation)
 
 data = matrix(rbinom(200*200, 1, 0.5), nrow = 200)
-data[1,] = data[,1] = data[200,] = data[,250] = 0
+data[1,] = data[,1] = data[200,] = data[,200] = 0
 
 plot(which(data == 1, arr.ind = T)[,"col"], which(data == 1, arr.ind = T)[,"row"],
      ylim = c(0,200), xlim = c(0,200), type = "p", pch = 15, cex = 0.4,
