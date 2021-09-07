@@ -3,7 +3,7 @@ An example repository for using GitHub Actions, particularly as a cluster.
 
 This repository contains 2 analysis scripts which can be executed remotely on the GitHub servers by running the action called "A GitHub action".
 
-To use this repository with you account, just fork it!
+Fork this repository to use it with your account.
 
 
 ## What is an action?
